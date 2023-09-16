@@ -1,4 +1,4 @@
-import { API_KEY } from "/src/config.js";
+import { WEATHER_API_KEY } from "/config.js";
 
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
@@ -13,7 +13,7 @@ search.addEventListener('click', () => {
     if (city === '')
         return;
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${API_KEY}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${WEATHER_API_KEY}`)
         .then(response => response.json())
         .then(json => {
 

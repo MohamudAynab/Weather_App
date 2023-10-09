@@ -1,24 +1,24 @@
 {
-  "name": "weather_app",
-  "version": "1.0.0",
-  "description": "modern and sleek weather application.",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/your-username/your-repository.git"
-  },
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/your-username/your-repository/issues"
-  },
-  "homepage": "https://github.com/your-username/your-repository#readme",
-  "dependencies": {
-    "dotenv": "^16.3.1",
-    "node": "^20.7.0"
-  }
+	"name": "weather_app",
+	"version": "1.0.0",
+	"description": "modern weather application that provides current weather via user input or location.",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/MohamudAynab/Weather_App.git"
+	},
+	"main": "index.js",
+	"scripts": {
+		"start": "node index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Mohamud Aynab",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/MohamudAynab/Weather_App/issues"
+	},
+	"homepage": "https://github.com/MohamudAynab/Weather_App#readme",
+	"dependencies": {
+		"dotenv": "^16.3.1",
+		"node": "^20.7.0"
+	}
 }

@@ -1,9 +1,38 @@
-config.js
+# Ignore system and IDE files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
 
+# Ignore dependencies
+node_modules/
+bower_components/
 
+# Ignore build artifacts and compiled files
+/dist/
+/build/
+/out/
+/.next/
+/.nuxt/
+/*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
+# Ignore environment files
+dotenv.js
 
-
-
-
-
+# Ignore OS-generated files
+Icon?
+.DS_Store?
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+*.DS_Store

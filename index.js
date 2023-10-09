@@ -1,21 +1,22 @@
+import { config } from './dotenv.js';
+
 const container = document.querySelector('.container');
 const search = document.querySelector('.search-box button');
 const weatherBox = document.querySelector('.weather-box');
 const weatherDetails = document.querySelector('.weather-details');
 const error404 = document.querySelector('.not-found');
 
-require('dotenv').config();
 
 search.addEventListener('click', () => {
     
-	const apiKey = process.env.WEATHER_API_KEY;
+	const WEATHER_API_KEY = config.WEATHER_API_KEY;
 	const city = document.querySelector('.search-box input').value;
 
 	if (city === '') {
 		console.error('City field is empty.');
 	}
 
-	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+	const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${WEATHER_API_KEY}`;
 
 	fetch(apiUrl)
 		.then((response) => response.json())
@@ -77,3 +78,5 @@ search.addEventListener('click', () => {
 			container.style.height = '590px';
 		});
 });
+
+
